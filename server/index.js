@@ -24,6 +24,7 @@ app.get('/api/projects', (req, res) => {
       description: "A simple, no-nonsense To-Do app to keep your day sorted and your brain uncluttered.",
       liveLink: "https://nitinm68.github.io/TODO-APP/"
     },
+    // Added more projects
     {
       id: 2,
       title: "Weather App",
