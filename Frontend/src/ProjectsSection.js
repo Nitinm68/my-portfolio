@@ -10,31 +10,29 @@ const ProjectsSection = () => {
 
   // 🔥 Fetch projects from backend
   useEffect(() => {
-  fetch("http://localhost:5000/api/projects")
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error("Network response was not ok");
-      }
-      return response.json(); // Parse JSON from response
-    })
-    .then((data) => {
-      console.log("📦 Projects loaded:", data);
-      setProjectData(data); // set state
-    })
-    .catch((error) => {
-      console.error("❌ Error loading projects:", error);
-    });
-}, []);
-
+    fetch("https://my-portfolio-gl8a.onrender.com/api/projects")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json(); // Parse JSON from response
+      })
+      .then((data) => {
+        console.log("📦 Projects loaded:", data);
+        setProjectData(data); // set state
+      })
+      .catch((error) => {
+        console.error("❌ Error loading projects:", error);
+      });
+  }, []);
 
   const handleCardClick = (project) => {
-  if (project.liveLink) {
-    window.open(project.liveLink, "_blank");
-  } else {
-    alert("❌ Project link not available");
-  }
-};
-
+    if (project.liveLink) {
+      window.open(project.liveLink, "_blank");
+    } else {
+      alert("❌ Project link not available");
+    }
+  };
 
   const handleModalClose = () => {
     setShowModal(false);
@@ -65,4 +63,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;                  
+export default ProjectsSection;
