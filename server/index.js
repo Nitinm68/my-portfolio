@@ -91,7 +91,7 @@ app.get("/api/projects", (req, res) => {
     },
     {
       id: 10,
-      title: " AGE Calculator",
+      title: "AGE Calculator",
       description:
         "A quick and easy tool to calculate your exact age in years, months, and days. 🎂⏳",
       liveLink: "https://nitinm68.github.io/AGE-calculator/",
@@ -101,7 +101,7 @@ app.get("/api/projects", (req, res) => {
       title: "Event Registration Form",
       description:
         "A functional event registration form created with HTML, CSS, and JavaScript to collect participant details and validate inputs.",
-      liveLink: "",
+      liveLink: "https://nitinm68.github.io/Event-Registration-Form/",
     },
   ]);
 });

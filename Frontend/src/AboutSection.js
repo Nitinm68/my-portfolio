@@ -29,6 +29,11 @@ const AboutSection = () => {
           <div className="skill-card">Nodejs</div>
           <div className="skill-card">Expressjs</div>
           <div className="skill-card">JAVA</div>
+          <div className="skill-card">MySQL</div>
+          <div className="skill-card">Git & GitHub</div>
+          <div className="skill-card">VS Code</div>
+          <div className="skill-card">Postman</div>
+          <div className="skill-card">Canva</div>
         </div>
       </div>
     </section>
