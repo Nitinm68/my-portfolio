@@ -59,7 +59,7 @@ app.get("/api/projects", (req, res) => {
       title: "job application form",
       description:
         "A clean and responsive job application form built using only HTML and CSS for collecting applicant details.",
-      liveLink: "",
+      liveLink: "https://nitinm68.github.io/project-2-jobapplication/",
     },
     {
       id: 6,
@@ -87,7 +87,7 @@ app.get("/api/projects", (req, res) => {
       title: "Weather App",
       description:
         "A real-time weather app built with React and JavaScript, fetching live data from an external API to display dynamic forecasts.",
-      liveLink: "https://github.com/Nitinm68/Weather-App.git",
+      liveLink: "https://nitinm68.github.io/weather/",
     },
     {
       id: 10,
